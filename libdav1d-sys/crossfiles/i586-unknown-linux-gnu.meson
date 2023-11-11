@@ -1,12 +1,12 @@
 [binaries]
-c = 'gcc'
-cpp = 'g++'
-ar = 'ar'
-strip = 'strip'
+c = 'i586-linux-gnueabi-gcc'
+cpp = 'i586-linux-gnueabi-g++'
+ar = 'i586-linux-gnueabi-ar'
+strip = 'i586-linux-gnueabi-strip'
 
 [properties]
-c_link_args = ['-m32', '-Wl,-z,text']
-c_args = ['-m32']
+#c_link_args = ['-m32', '-Wl,-z,text']
+#c_args = ['-m32']
 
 [host_machine]
 system = 'linux'

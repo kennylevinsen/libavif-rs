@@ -44,6 +44,7 @@ fn main() {
         .env("DESTDIR", &install_dir)
         .current_dir(&out_dir)
         .arg("install")
+        .arg("-v")
         .status()
         .expect("This crate requires ninja to be installed: https://ninja-build.org/");
     assert!(s.success(), "ninja failed");
